@@ -86,6 +86,14 @@
                                     <constraint firstAttribute="height" constant="45" id="YCS-ZM-32y"/>
                                 </constraints>
                                 <state key="normal" title="登录" backgroundImage="button_bg">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4Y-gi-6Tt">
+                                <rect key="frame" x="270" y="435" width="60" height="30"/>
+                                <state key="normal" title="忘记密码">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
@@ -101,7 +109,9 @@
                             <constraint firstItem="fk0-37-Yp6" firstAttribute="top" secondItem="Reo-kA-kxz" secondAttribute="bottom" constant="17" id="LgP-GB-aiL"/>
                             <constraint firstAttribute="centerX" secondItem="560-vu-7z0" secondAttribute="centerX" id="W3f-Dr-9Lc"/>
                             <constraint firstItem="8RV-bx-4hh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WSp-J0-l4c"/>
+                            <constraint firstItem="b4Y-gi-6Tt" firstAttribute="top" secondItem="8RV-bx-4hh" secondAttribute="bottom" constant="16" id="WWk-1h-xJa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="IAk-t4-dCM" secondAttribute="trailing" constant="-16" id="XSI-fT-ZTd"/>
+                            <constraint firstAttribute="centerX" secondItem="b4Y-gi-6Tt" secondAttribute="centerX" id="Ym7-pk-vbe"/>
                             <constraint firstItem="8RV-bx-4hh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Z65-ID-CPS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="K4B-TZ-jo2" secondAttribute="trailing" constant="-16" id="aJ6-Kq-8Aj"/>
                             <constraint firstItem="K4B-TZ-jo2" firstAttribute="bottom" secondItem="2oD-vY-Dcr" secondAttribute="bottom" id="clM-H6-F7N"/>
