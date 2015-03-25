@@ -17,10 +17,10 @@
     // instead, use mainScreen scale which works perfectly:
     float sortaPixel = 1.0/[UIScreen mainScreen].scale;
     UIView *topSeparatorView = [[UIView alloc] initWithFrame:
-                                CGRectMake(0, 0, self.frame.size.width, sortaPixel)];
+                                CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, sortaPixel)];
 
     topSeparatorView.userInteractionEnabled = NO;
-    [topSeparatorView setBackgroundColor:self.backgroundColor];
+    [topSeparatorView setBackgroundColor:[UIColor grayColor]];
     [self addSubview:topSeparatorView];
 
     self.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
