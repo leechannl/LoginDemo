@@ -30,6 +30,7 @@
                                                                                                             NSForegroundColorAttributeName: [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5]
                                                                                                             }];
     self.passwdTextField.attributedPlaceholder = passwdPlaceholder;
+    self.loginButton.layer.cornerRadius = 6.0;
 }
 
 - (void)viewWillAppear:(BOOL)animated
