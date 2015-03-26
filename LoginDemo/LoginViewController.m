@@ -9,7 +9,7 @@
 #import "LoginViewController.h"
 #import "UILine.h"
 
-@interface LoginViewController ()
+@interface LoginViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *ChineseNameLabel;
@@ -42,11 +42,13 @@
                                                                                                                      NSForegroundColorAttributeName: [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5]
                                                                                                                      }];
     self.usernameTextField.attributedPlaceholder = usernamePlaceholer;
+    self.usernameTextField.delegate = self;
     self.usernameTextField.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
     NSAttributedString *passwdPlaceholder = [[NSAttributedString alloc] initWithString:@"输入密码" attributes:@{
                                                                                                             NSForegroundColorAttributeName: [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5]
                                                                                                             }];
     self.passwdTextField.attributedPlaceholder = passwdPlaceholder;
+    self.passwdTextField.delegate = self;
     self.passwdTextField.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
     self.loginButton.layer.cornerRadius = 6.0;
 
@@ -107,6 +109,18 @@
     self.switchToInternationalButton.hidden = NO;
 }
 
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    if (textField == self.usernameTextField) {
+        [self.passwdTextField becomeFirstResponder];
+    }
+    if (textField == self.passwdTextField) {
+        NSLog(@"Call login API...");
+        [self dismissKeyboard];
+    }
+    return YES;
+}
+
 #pragma mark - button action
 
 - (IBAction)loginButtonPressed:(UIButton *)sender {
@@ -116,6 +130,7 @@
         [self.passwdTextField becomeFirstResponder];
     } else {
         NSLog(@"Call login API...");
+        [self dismissKeyboard];
     }
 }
 

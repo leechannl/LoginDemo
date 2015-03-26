@@ -8,7 +8,7 @@
 
 #import "ForgotPasswordViewController.h"
 
-@interface ForgotPasswordViewController ()
+@interface ForgotPasswordViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 
 @end
@@ -24,6 +24,7 @@
                                                                                                                      }];
     self.usernameTextField.attributedPlaceholder = usernamePlaceholer;
     self.usernameTextField.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
+    self.usernameTextField.delegate = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -38,6 +39,13 @@
 - (void)dismissKeyboard
 {
     [self.view endEditing:YES];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField
+{
+    NSLog(@"Call forgot password API...");
+    [self dismissKeyboard];
+    return YES;
 }
 
 @end

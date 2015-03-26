@@ -41,7 +41,7 @@
                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="印象笔记用户名或电子邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-QP-Bl2">
                                         <rect key="frame" x="16" y="16" width="568" height="19"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.38" colorSpace="calibratedWhite"/>
@@ -62,7 +62,7 @@
                                         <rect key="frame" x="16" y="16" width="569" height="19"/>
                                         <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="go" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.38" colorSpace="calibratedWhite"/>
@@ -271,7 +271,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="vXZ-lx-hvc" kind="presentation" id="9Cy-3e-IPL"/>
+                                    <segue destination="vXZ-lx-hvc" kind="presentation" modalTransitionStyle="crossDissolve" id="9Cy-3e-IPL"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="印象笔记" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBe-A7-NZL">
@@ -283,7 +283,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="印象笔记用户名或者电子邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="M6f-hG-H8u">
                                 <rect key="frame" x="16" y="292" width="568" height="17"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="go"/>
                             </textField>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="evernote_icon_black" translatesAutoresizingMaskIntoConstraints="NO" id="WZC-LS-TdZ">
                                 <rect key="frame" x="270" y="101" width="60" height="60"/>
