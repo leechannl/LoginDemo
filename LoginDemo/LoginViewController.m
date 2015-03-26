@@ -6,10 +6,10 @@
 //  Copyright (c) 2015 Pirate. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "LoginViewController.h"
 #import "UILine.h"
 
-@interface ViewController ()
+@interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *logoImageView;
 @property (weak, nonatomic) IBOutlet UILabel *ChineseNameLabel;
@@ -30,7 +30,7 @@
 
 @end
 
-@implementation ViewController
+@implementation LoginViewController
 
 #pragma mark - view controller life cycle
 
