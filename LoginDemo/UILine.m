@@ -20,10 +20,10 @@
                                 CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, sortaPixel)];
 
     topSeparatorView.userInteractionEnabled = NO;
-    [topSeparatorView setBackgroundColor:[UIColor grayColor]];
+    [topSeparatorView setBackgroundColor:[UIColor colorWithRed:0.115 green:0.541 blue:0.322 alpha:1.000]];
     [self addSubview:topSeparatorView];
 
-    self.backgroundColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.3];
+    self.backgroundColor = [UIColor clearColor];
     self.userInteractionEnabled = NO;
 }
 
