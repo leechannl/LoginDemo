@@ -108,7 +108,7 @@
                         <color key="backgroundColor" red="0.20392156862745098" green="0.68235294117647061" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="qal-t6-GTY" secondAttribute="trailing" constant="-16" id="1dR-2L-FDb"/>
-                            <constraint firstItem="IAk-t4-dCM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="5e0-Hp-AgK"/>
+                            <constraint firstItem="IAk-t4-dCM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5e0-Hp-AgK"/>
                             <constraint firstItem="K4B-TZ-jo2" firstAttribute="top" secondItem="fk0-37-Yp6" secondAttribute="bottom" constant="8" id="6Eu-Jb-bjZ"/>
                             <constraint firstItem="8RV-bx-4hh" firstAttribute="top" secondItem="IAk-t4-dCM" secondAttribute="bottom" constant="24" id="Cur-5W-gDX"/>
                             <constraint firstItem="qal-t6-GTY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Ie4-rm-AHB"/>
@@ -118,10 +118,10 @@
                             <constraint firstAttribute="centerX" secondItem="560-vu-7z0" secondAttribute="centerX" id="W3f-Dr-9Lc"/>
                             <constraint firstItem="8RV-bx-4hh" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" id="WSp-J0-l4c"/>
                             <constraint firstItem="b4Y-gi-6Tt" firstAttribute="top" secondItem="8RV-bx-4hh" secondAttribute="bottom" constant="16" id="WWk-1h-xJa"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="IAk-t4-dCM" secondAttribute="trailing" constant="-16" id="XSI-fT-ZTd"/>
+                            <constraint firstAttribute="trailing" secondItem="IAk-t4-dCM" secondAttribute="trailing" id="XSI-fT-ZTd"/>
                             <constraint firstAttribute="centerX" secondItem="b4Y-gi-6Tt" secondAttribute="centerX" id="Ym7-pk-vbe"/>
                             <constraint firstItem="8RV-bx-4hh" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="Z65-ID-CPS"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="K4B-TZ-jo2" secondAttribute="trailing" constant="-16" id="aJ6-Kq-8Aj"/>
+                            <constraint firstAttribute="trailing" secondItem="K4B-TZ-jo2" secondAttribute="trailing" id="aJ6-Kq-8Aj"/>
                             <constraint firstAttribute="centerY" secondItem="K4B-TZ-jo2" secondAttribute="centerY" constant="25" id="duj-DH-GDC"/>
                             <constraint firstItem="Reo-kA-kxz" firstAttribute="top" secondItem="560-vu-7z0" secondAttribute="bottom" id="eKh-PR-Suk"/>
                             <constraint firstAttribute="centerY" secondItem="IAk-t4-dCM" secondAttribute="centerY" constant="-25" id="fdW-Yk-FUq"/>
@@ -130,7 +130,7 @@
                             <constraint firstAttribute="centerX" secondItem="Reo-kA-kxz" secondAttribute="centerX" id="kmE-6Y-hht"/>
                             <constraint firstAttribute="centerX" secondItem="fk0-37-Yp6" secondAttribute="centerX" id="ouz-4L-O3G"/>
                             <constraint firstItem="560-vu-7z0" firstAttribute="top" secondItem="TKi-FV-wiM" secondAttribute="bottom" constant="8" id="p12-ea-QDo"/>
-                            <constraint firstItem="K4B-TZ-jo2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="qHa-uQ-9y0"/>
+                            <constraint firstItem="K4B-TZ-jo2" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="qHa-uQ-9y0"/>
                             <constraint firstAttribute="centerX" secondItem="TKi-FV-wiM" secondAttribute="centerX" id="uI0-nf-QHI"/>
                         </constraints>
                         <variation key="default">
@@ -146,6 +146,8 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="fogotPasswdButton" destination="b4Y-gi-6Tt" id="1eA-mJ-4Hj"/>
+                        <outlet property="loginButton" destination="8RV-bx-4hh" id="naF-Hn-yiE"/>
                         <outlet property="passwdTextField" destination="fmz-o6-lZt" id="vPG-hC-vdt"/>
                         <outlet property="usernameTextField" destination="bJa-QP-Bl2" id="pKo-DT-WOh"/>
                     </connections>
