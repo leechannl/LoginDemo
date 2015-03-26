@@ -42,10 +42,12 @@
                                                                                                                      NSForegroundColorAttributeName: [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5]
                                                                                                                      }];
     self.usernameTextField.attributedPlaceholder = usernamePlaceholer;
+    self.usernameTextField.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
     NSAttributedString *passwdPlaceholder = [[NSAttributedString alloc] initWithString:@"输入密码" attributes:@{
                                                                                                             NSForegroundColorAttributeName: [UIColor colorWithRed:1 green:1 blue:1 alpha:0.5]
                                                                                                             }];
     self.passwdTextField.attributedPlaceholder = passwdPlaceholder;
+    self.passwdTextField.tintColor = [UIColor colorWithRed:1 green:1 blue:1 alpha:0.7];
     self.loginButton.layer.cornerRadius = 6.0;
 
     [[NSNotificationCenter defaultCenter] addObserver:self
