@@ -38,10 +38,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K4B-TZ-jo2" userLabel="nameFieldBG">
                                 <rect key="frame" x="0.0" y="250" width="600" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="印象笔记用户名或电子邮箱" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-QP-Bl2">
-                                        <rect key="frame" x="16" y="17" width="568" height="17"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="印象笔记用户名或电子邮箱" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="bJa-QP-Bl2">
+                                        <rect key="frame" x="16" y="16" width="568" height="19"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.38" colorSpace="calibratedWhite"/>
@@ -58,10 +58,10 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IAk-t4-dCM" userLabel="passwdFieldBG">
                                 <rect key="frame" x="0.0" y="300" width="600" height="50"/>
                                 <subviews>
-                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fmz-o6-lZt">
-                                        <rect key="frame" x="16" y="17" width="569" height="17"/>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="输入密码" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fmz-o6-lZt">
+                                        <rect key="frame" x="16" y="16" width="569" height="19"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" secureTextEntry="YES"/>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="0.38" colorSpace="calibratedWhite"/>
@@ -88,6 +88,9 @@
                                     <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted" title="登录"/>
+                                <connections>
+                                    <action selector="loginButtonPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="zey-0r-jnU"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4Y-gi-6Tt">
                                 <rect key="frame" x="272" y="418" width="56" height="29"/>
@@ -118,9 +121,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yRN-Pb-tyU">
-                                <rect key="frame" x="208" y="563" width="184" height="29"/>
+                                <rect key="frame" x="206" y="563" width="188" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <state key="normal" title="切换到Evernote International">
+                                <state key="normal" title="切换到 Evernote International">
                                     <color key="titleColor" white="1" alpha="0.70000000000000007" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -149,11 +152,11 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20392156862745098" green="0.68235294117647061" blue="0.30588235294117649" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="qal-t6-GTY" secondAttribute="trailing" constant="-16" id="1dR-2L-FDb"/>
+                            <constraint firstAttribute="trailing" secondItem="qal-t6-GTY" secondAttribute="trailing" id="1dR-2L-FDb"/>
                             <constraint firstItem="IAk-t4-dCM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="5e0-Hp-AgK"/>
                             <constraint firstItem="K4B-TZ-jo2" firstAttribute="top" secondItem="fk0-37-Yp6" secondAttribute="bottom" constant="8" id="6Eu-Jb-bjZ"/>
                             <constraint firstItem="8RV-bx-4hh" firstAttribute="top" secondItem="IAk-t4-dCM" secondAttribute="bottom" constant="16" id="Cur-5W-gDX"/>
-                            <constraint firstItem="qal-t6-GTY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="Ie4-rm-AHB"/>
+                            <constraint firstItem="qal-t6-GTY" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Ie4-rm-AHB"/>
                             <constraint firstItem="IAk-t4-dCM" firstAttribute="bottom" secondItem="K4B-TZ-jo2" secondAttribute="bottom" constant="49" id="KeJ-TH-ODc"/>
                             <constraint firstAttribute="centerY" secondItem="IAk-t4-dCM" secondAttribute="centerY" constant="-25" id="Kie-fN-D7I"/>
                             <constraint firstItem="fk0-37-Yp6" firstAttribute="top" secondItem="Reo-kA-kxz" secondAttribute="bottom" constant="17" id="LgP-GB-aiL"/>
@@ -197,15 +200,23 @@
                     </view>
                     <nil key="simulatedStatusBarMetrics"/>
                     <connections>
+                        <outlet property="BottomLineView" destination="WmM-Iu-Qe4" id="M5T-zb-4Cs"/>
+                        <outlet property="ChineseNameLabel" destination="560-vu-7z0" id="mZB-CR-KKu"/>
+                        <outlet property="EnglishNameLabel" destination="Reo-kA-kxz" id="kYH-cQ-2aN"/>
+                        <outlet property="descLabel" destination="fk0-37-Yp6" id="KZY-2k-cBB"/>
                         <outlet property="fogotPasswdButton" destination="b4Y-gi-6Tt" id="1eA-mJ-4Hj"/>
                         <outlet property="loginButton" destination="8RV-bx-4hh" id="naF-Hn-yiE"/>
+                        <outlet property="logoImageView" destination="TKi-FV-wiM" id="bU9-yx-FWA"/>
+                        <outlet property="nameFieldBg" destination="K4B-TZ-jo2" id="5pr-d2-YJk"/>
                         <outlet property="passwdTextField" destination="fmz-o6-lZt" id="vPG-hC-vdt"/>
+                        <outlet property="switchToCreateAccountButton" destination="e55-YJ-ghe" id="nA5-vs-2EO"/>
+                        <outlet property="switchToInternationalButton" destination="yRN-Pb-tyU" id="wB9-bd-L8q"/>
                         <outlet property="usernameTextField" destination="bJa-QP-Bl2" id="pKo-DT-WOh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="486" y="476"/>
+            <point key="canvasLocation" x="565" y="480"/>
         </scene>
     </scenes>
     <resources>
